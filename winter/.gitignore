@@ -1,0 +1,17 @@
+target
+bin
+*.idea
+*.iml
+*.eml
+.project
+.settings
+.classpath
+/target
+.springBeans
+.DS_Store
+*/target/**
+*.log
+antx.properties
+rebel.xml
+.ropeproject
+*.orig
