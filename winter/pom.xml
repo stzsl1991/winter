@@ -12,6 +12,7 @@
         <module>../winter.biz</module>
         <module>../winter.common</module>
         <module>../winter.web</module>
+        <module>../winter.dal</module>
     </modules>
 
     <!--属性配置-->
