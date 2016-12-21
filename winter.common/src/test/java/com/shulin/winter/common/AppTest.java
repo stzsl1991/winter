@@ -1,4 +1,4 @@
-package com.shulin.winter;
+package com.shulin.winter.common;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

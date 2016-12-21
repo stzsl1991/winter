@@ -19,10 +19,17 @@
     </properties>
 
     <dependencies>
+
+        <!--biz层依赖dal层-->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <scope>test</scope>
+            <groupId>com.shulin.winter</groupId>
+            <artifactId>winter.dal</artifactId>
         </dependency>
+        <!--biz层依赖common层-->
+        <dependency>
+            <groupId>com.shulin.winter</groupId>
+            <artifactId>winter.common</artifactId>
+        </dependency>
+
     </dependencies>
 </project>

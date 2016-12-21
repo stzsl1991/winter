@@ -1,4 +1,4 @@
-package com.shulin.winter.springtest;
+package com.shulin.winter.common.springtest;
 
 import lombok.Getter;
 import lombok.Setter;

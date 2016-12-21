@@ -1,4 +1,4 @@
-package com.shulin.winter;
+package com.shulin.winter.common;
 
 /**
  * Hello world!

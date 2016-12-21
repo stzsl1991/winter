@@ -2,8 +2,10 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-       <bean id="person" class="com.shulin.winter.springtest.Person">
+       <bean id="person" class="com.shulin.winter.common.springtest.Person">
               <property name="name" value="测试"/>
               <property name="age" value="12"/>
        </bean>
+
+       <import resource="classpath*:spring-mybatis.xml"/>
 </beans>
