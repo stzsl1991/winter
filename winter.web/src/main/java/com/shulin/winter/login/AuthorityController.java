@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * 业务：权限验证
+ * 业务：权限验证，登录，登出，注册...
  * Created by shulin on 16/12/21.
  */
 @Controller
@@ -36,11 +36,19 @@ public class AuthorityController {
         return "showUser";
     }
 
+    /**
+     * 跳转到登录界面
+     * @return
+     */
+    @RequestMapping("/loginPage")
+    public String toLoginPage() {
+        return "login";
+    }
 
-    @RequestMapping(value="/login",produces = {"application/json"})
+
+    @RequestMapping(value = "/login", produces = {"application/json"})
     @ResponseBody
     public Result userLogin(String username, String pwd) {
-        log.info("kaishi");
         if (StringUtils.isEmpty(username) || StringUtils.isEmpty(pwd)) {
             return Result.wrapErrorResult("", "用户名和密码不能为空！");
         }

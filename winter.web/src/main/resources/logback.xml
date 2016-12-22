@@ -53,15 +53,15 @@
 			<pattern>${COMMON_PATTERN}</pattern>
 		</encoder>
 	</appender>
-	<appender name="DB" class="ch.qos.logback.core.FileAppender">
-		<filter class="com.tqmall.common.util.log.DbNoConneInfoFilter" />
-		<file>logs/db.log</file>
-		<append>false</append>
-		<encoder>
-			<charset>${LOG_CHARSET}</charset>
-			<pattern>${COMMON_PATTERN}</pattern>
-		</encoder>
-	</appender>
+	<!--<appender name="DB" class="ch.qos.logback.core.FileAppender">-->
+		<!--<filter class="com.tqmall.common.util.log.DbNoConneInfoFilter" />-->
+		<!--<file>logs/db.log</file>-->
+		<!--<append>false</append>-->
+		<!--<encoder>-->
+			<!--<charset>${LOG_CHARSET}</charset>-->
+			<!--<pattern>${COMMON_PATTERN}</pattern>-->
+		<!--</encoder>-->
+	<!--</appender>-->
 	<appender name="ERROR" class="ch.qos.logback.core.FileAppender">
 		<file>logs/error.log</file>
 		<append>false</append>
