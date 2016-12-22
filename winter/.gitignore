@@ -2,6 +2,7 @@ target
 bin
 *.idea
 *.iml
+/out/
 *.eml
 .project
 .settings
@@ -15,3 +16,4 @@ antx.properties
 rebel.xml
 .ropeproject
 *.orig
+
