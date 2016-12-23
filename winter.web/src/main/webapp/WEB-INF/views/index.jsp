@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Bootstrap 实例</title>
+    <title>Winter is coming!</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -56,30 +56,30 @@
         <div class="col-sm-3">
             <h3>春</h3>
 
-            <p>学的不仅是技术，更是梦想！</p>
+            <p>杨柳青青江水平, 闻郎江上唱歌声。</p>
 
-            <p>再牛逼的梦想,也抵不住你傻逼似的坚持！</p>
+            <p>东边日出西边雨, 道是无晴却有晴。</p>
         </div>
         <div class="col-sm-3">
             <h3>夏</h3>
 
-            <p>学的不仅是技术，更是梦想！</p>
+            <p>泉眼无声惜细流，树阴照水爱晴柔。</p>
 
-            <p>再牛逼的梦想,也抵不住你傻逼似的坚持！</p>
+            <p>小荷才露尖尖角，早有蜻蜓立上头。</p>
         </div>
         <div class="col-sm-3">
             <h3>秋</h3>
 
-            <p>学的不仅是技术，更是梦想！</p>
+            <p>自古逢秋悲寂寥，我言秋日胜春朝。</p>
 
-            <p>再牛逼的梦想,也抵不住你傻逼似的坚持！</p>
+            <p>晴空一鹤排云上，便引诗情到碧宵。</p>
         </div>
         <div class="col-sm-3">
             <h3>冬</h3>
 
-            <p>学的不仅是技术，更是梦想！</p>
+            <p>千里黄云白日曛，北风吹雁雪纷纷。</p>
 
-            <p>再牛逼的梦想,也抵不住你傻逼似的坚持！</p>
+            <p>莫愁前路无知己，天下谁人不识君。</p>
         </div>
     </div>
 </div>

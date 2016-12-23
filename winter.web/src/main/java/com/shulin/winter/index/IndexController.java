@@ -1,4 +1,4 @@
-package com.shulin.winter.login;
+package com.shulin.winter.index;
 
 import com.shulin.winter.common.Result;
 import com.shulin.winter.dao.manager.UserDao;
@@ -22,11 +22,23 @@ import java.util.Map;
  */
 @Controller
 @Slf4j
-@RequestMapping("/authority")
-public class AuthorityController {
+@RequestMapping("/index")
+public class IndexController {
 
     @Autowired
     private UserDao userDao;
+
+
+    /**
+     * 跳转到登录界面
+     * URL：http://localhost:8083/winter/index
+     *
+     * @return
+     */
+    @RequestMapping("")
+    public String toLoginPage() {
+        return "index";
+    }
 
     @RequestMapping("/test")
     public String teset(Long id, Model model) {
@@ -34,15 +46,6 @@ public class AuthorityController {
         User user = userDao.selectById(id);
         model.addAttribute("user", user);
         return "showUser";
-    }
-
-    /**
-     * 跳转到登录界面
-     * @return
-     */
-    @RequestMapping("/loginPage")
-    public String toLoginPage() {
-        return "login";
     }
 
 

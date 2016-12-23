@@ -11,11 +11,10 @@
     <title></title>
     <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/bootstrap/css/bootstrap.min.css">
     <script src="<%=request.getContextPath()%>/resources/jquery/jquery-2.1.1.min.js"></script>
-    <%--<script src="https://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>--%>
     <script src="<%=request.getContextPath()%>/resources/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-<nav class="navbar navbar-inverse" role="navigation">
+<nav class="navbar navbar-default" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">WINTER</a>
@@ -24,21 +23,18 @@
             <ul class="nav navbar-nav">
                 <li class=""><a href="#">春天</a></li>
                 <li><a href="#">夏天</a></li>
+                <li><a href="#">秋天</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        秋天 <b class="caret"></b>
+                        冬天 <b class="caret"></b>
                     </a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">jmeter</a></li>
-                        <li><a href="#">EJB</a></li>
-                        <li><a href="#">Jasper Report</a></li>
+                        <li><a href="#">起飞咯</a></li>
                         <li class="divider"></li>
-                        <li><a href="#">分离的链接</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">另一个分离的链接</a></li>
+                        <li><a href="#">哪里走</a></li>
                     </ul>
                 </li>
-                <li><a href="#">冬天</a></li>
+
             </ul>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
