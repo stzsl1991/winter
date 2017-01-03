@@ -8,7 +8,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title></title>
     <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/bootstrap/css/bootstrap.min.css">
     <script src="<%=request.getContextPath()%>/resources/jquery/jquery-2.1.1.min.js"></script>
     <script src="<%=request.getContextPath()%>/resources/bootstrap/js/bootstrap.min.js"></script>
