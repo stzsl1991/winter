@@ -19,14 +19,13 @@ public class ExlOutParser {
      * 解析注解
      *
      * @param clazz
-     * @return
+     * @return    返回的结果实际是对每一列（字段）的相关属性的包装，然后会按照seqno排序
      * @throws Exception
      */
     public static List<ExlOutParseResult> parseExlOut(Class clazz) throws InstantiationException, IllegalAccessException {
         Object obj = clazz.newInstance();
-        Field[] fields = obj.getClass().getDeclaredFields();
         List<ExlOutParseResult> exlOutParseResultList = new ArrayList<>();
-        //解析类注解
+        //解析类注解，类注解是可以没有的，如果有，就是自增序列号
         if (obj.getClass().isAnnotationPresent(ExlOut.class)) {
             ExlOut exlOut = (ExlOut) obj.getClass().getAnnotation(ExlOut.class);
             ExlOutParseResult exlOutParseResult = new ExlOutParseResult();
@@ -36,6 +35,7 @@ public class ExlOutParser {
             exlOutParseResultList.add(exlOutParseResult);
         }
         //解析属性注解
+        Field[] fields = obj.getClass().getDeclaredFields();
         for (Field field : fields) {
             Annotation tmp = field.getAnnotation(ExlOut.class);
             if (tmp != null) {

@@ -10,15 +10,15 @@ import lombok.Setter;
 @Setter
 @Getter
 public class ExlOutParseResult implements Comparable {
-    private int colSeq;
-    private String colName;
-    private String fieldName;
-    private Class fieldType;
-    private String formatStr;
-    private Boolean autoIncrement;
+    private int colSeq;  //序列
+    private String colName;  //列名
+    private String fieldName;  //属性名称
+    private Class fieldType;    //属性类型
+    private String formatStr;   //日期格式
+    private Boolean autoIncrement;  //是否自增，全局属性
 
-    private String enumName;
-    private String enumMethod;
+    private String enumName;     //枚举名
+    private String enumMethod;    //枚举方法
 
     @Override
     public int compareTo(Object o) {

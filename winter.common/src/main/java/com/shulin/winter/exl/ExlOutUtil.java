@@ -34,7 +34,7 @@ public class ExlOutUtil {
      * 导出工具类
      *
      * @param sh            Excel中的表
-     * @param rowNum        从哪一行开始写入数据，rowNum==0表示输出列名
+     * @param rowNum        从哪一行开始写入数据，rowNum==0表示输出列名，分页使用
      * @param beanList      导出对象集合
      * @param exportBeanClz 导出对象Clazz
      * @throws NoSuchFieldException
@@ -92,9 +92,12 @@ public class ExlOutUtil {
                         } catch (IllegalAccessException e) {
                             throw new IllegalAccessException();
                         }
+                        //解析日期格式
                         if (exlOutParseResult.getFieldType().equals(Date.class)) {
                             result = DateUtil.convertDateToStr((Date) val, exlOutParseResult.getFormatStr());
-                        } else if (!StringUtils.isEmpty(exlOutParseResult.getEnumName())) {
+                        }
+                        //解析枚举
+                        else if (!StringUtils.isEmpty(exlOutParseResult.getEnumName())) {
                             String enumName = exlOutParseResult.getEnumName();
                             Class<?> cls = null;
                             try {
@@ -112,7 +115,9 @@ public class ExlOutUtil {
                                     }
                                 }
                             }
-                        } else {
+                        }
+                        //其他类型直接转成String输出
+                        else {
                             result = String.valueOf(val);
                         }
                     }
